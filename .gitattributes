@@ -1,0 +1,7 @@
+**node_modules/ export-ignore
+**.gitignore export-ignore
+**.gitattributes export-ignore
+db.sqlite3 export-ignore
+README.md export-ignore
+TODO.txt export-ignore
+static/ export-ignore

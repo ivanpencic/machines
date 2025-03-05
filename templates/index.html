@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masine</title>
+    <!-- <link rel="stylesheet" href="{% static bundle_prefix|add:'bundle.css' %}"> -->
+</head>
+<body>
+    {% load static %}
+    <div id="root"></div>
+    <script>
+        window.__INITIAL_STATE__ = {
+            isAuthenticated: {{ request.user.is_authenticated|yesno:"true,false" }},
+            user: {
+                username: "{{ request.user.username|default:'' }}",
+                email: "{{ request.user.email|default:'' }}",
+            },
+            constants: {
+            },
+        };
+    </script>
+    <script src="{% static bundle_prefix|add:'bundle.js' %}"></script>
+</body>
+</html>

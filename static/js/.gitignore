@@ -1,0 +1,59 @@
+# Node moduli
+node_modules/
+.pnpm-store/  # Ako koristite pnpm
+
+# Build artefakti
+dist/
+build/
+
+# Logovi
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# IDE i editor fajlovi
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Environment promenljive
+.env
+.env.local
+.env.development
+.env.production
+
+# Dependency direktorijumi
+jspm_packages/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional Babel cache
+.babelcache
+
+# Webpack cache
+.webpack/
+
+# Optional REPL history
+.node_repl_history
+
+# MacOS fajlovi
+.DS_Store
+
+# Test fajlovi
+coverage/
+*.log
+.nyc_output/
+
+# Cypress
